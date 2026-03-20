@@ -3,13 +3,12 @@
 class Client{
     private:
     static unsigned int count;
-
     unsigned int id;
-    std::string name;
-    std::string lastName;
-    bool isTradable;
+
+    char name[50];
+    char lastName[50]
 
     public:
     virtual Client() = 0;
-    ~Client() = 0;
+    virtual ~Client() = 0;
 };

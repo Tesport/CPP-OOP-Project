@@ -2,19 +2,23 @@
 #include "ItemsTable.h"
 #include <iostream>
 
-Items::Items() = 0;
-Items::~Items() = 0;
+ItemsTable::ItemsTable() = 0;
+ItemsItemsTable::~ItemsTable() = 0;
 
-Items::virtual void addItem() = 0;
+ItemsTable::addItem(char n[100], unsigned double p, bool isT) 
+: Item(n[100], p, isT) { 
+	
+	std::cout << "An item with these parameters was added" 
+};
 
-Items::virtual void viewAllItems() = 0;
+ItemsTable::viewAllItems() = 0;
 
-Items::virtual inline viewItemByID() const= 0;
+ItemsTable::viewItemByID() const= 0;
 
-Items::virtual void deleteItem() = 0;
+ItemsTable::deleteItem() = 0;
 
-Items::virtual inline searchItems() const = 0;
+ItemsTable::searchItems() const = 0;
 
-Items::virtual void showItemList() const = 0;
+ItemsTable::showItemList() const = 0;
 
-Items::virtual void sortItems()= 0;
+ItemsTable::sortItems()= 0;

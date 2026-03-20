@@ -3,13 +3,13 @@
 class Item{
     private:
     static unsigned int count;
-
     unsigned int id;
-    std::string name;
-    unsigned int price;
+
+    char name[100];
+    unsigned double price;
     bool isTradable;
 
     public:
     virtual Item() = 0;
-    ~Item() = 0;
+    virtual ~Item() = 0;
 };
